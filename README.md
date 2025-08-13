@@ -1,2 +1,2 @@
-# Desafios-Ruby
+# Desafios Ruby
 Exercícios na linguagem Ruby.
