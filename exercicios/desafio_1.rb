@@ -8,4 +8,4 @@ valor_pagar = 1250
 
 mensagem = "O Tomador: #{cnpj_tomador} , precisa pagar: #{'%.2f' % valor_pagar.to_f} R$"
 
-message mensagem
+puts mensagem
