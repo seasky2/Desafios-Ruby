@@ -23,6 +23,8 @@
 # Apenas escreva a lógica dentro da função validar_nota_fiscal.
 # Não modifique os nomes das variáveis ou a estrutura - eles são necessários para a validação automática.
 
+# ESPAÇO PARA SUA SOLUÇÃO:
+
 tipo_da_nota_1 = "Vinvoice::MaterialInvoice"
 tipo_da_nota_2 = "Vinvoice::TransportationInvoice"
 tipo_da_nota_3 = "Vinvoice::ServiceInvoice"
