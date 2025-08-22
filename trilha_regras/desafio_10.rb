@@ -9,11 +9,11 @@
 processable = process_instance.processable
 
 if processable.net_due_date.nil?
-  message "A nota fiscal não possui data de vencimento."
+    message "A nota fiscal não possui data de vencimento."
 else
-  if processable.net_due_date < Date.today
-    message "A nota fiscal está vencida desde #{processable.net_due_date}."
-  else
-    message "A nota fiscal está dentro do prazo. Data de vencimento: #{processable.net_due_date}."
-  end
+    if processable.net_due_date < Date.today
+        message "A nota fiscal está vencida desde #{processable.net_due_date}."
+    else
+        message "A nota fiscal está dentro do prazo. Data de vencimento: #{processable.net_due_date}."
+    end
 end

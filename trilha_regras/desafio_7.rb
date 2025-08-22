@@ -10,10 +10,10 @@ processable = process_instance.processable
 cfops = processable.invoice_items.map(&:cfop).compact.uniq
 
 if cfops.any?
-  message "CFOPs presentes na nota:"
-  cfops.each do |cfop|
-    message "- CFOP: #{cfop}"
-  end
+    message "CFOPs presentes na nota:"
+    cfops.each do |cfop|
+        message "- CFOP: #{cfop}"
+    end
 else
-  message "Nenhum CFOP presente na nota."
+    message "Nenhum CFOP presente na nota."
 end

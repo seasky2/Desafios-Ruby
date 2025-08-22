@@ -16,4 +16,4 @@ processable.save!(validate: false)
 
 message processable.cf_codigo_interno_cliente
 
-true
+return true

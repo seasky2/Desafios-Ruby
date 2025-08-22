@@ -7,17 +7,17 @@
 processable = process_instance.processable
 
 impostos = {
-  icms: processable.icms_value.to_f > 0 ? processable.icms_value.to_f : nil,
-  icms_st: processable.icms_st_value.to_f > 0 ? processable.icms_st_value.to_f : nil,
-  ipi: processable.ipi_value.to_f > 0 ? processable.ipi_value.to_f : nil,
-  fcp_st: processable.fcp_st_value.to_f > 0 ? processable.fcp_st_value.to_f : nil
+    icms: processable.icms_value.to_f > 0 ? processable.icms_value.to_f : nil,
+    icms_st: processable.icms_st_value.to_f > 0 ? processable.icms_st_value.to_f : nil,
+    ipi: processable.ipi_value.to_f > 0 ? processable.ipi_value.to_f : nil,
+    fcp_st: processable.fcp_st_value.to_f > 0 ? processable.fcp_st_value.to_f : nil
 }.compact
 
 if impostos.any?
-  message "Impostos presentes:"
-  impostos.each do |nome, valor|
-    message "- #{nome.upcase}: R$ #{'%.2f' % valor}"
-  end
+    message "Impostos presentes:"
+    impostos.each do |nome, valor|
+        message "- #{nome.upcase}: R$ #{'%.2f' % valor}"
+    end
 else
-  message "Nenhum imposto presente."
+    message "Nenhum imposto presente."
 end
