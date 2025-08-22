@@ -54,29 +54,34 @@ aprovados = documentos.select {|documento| documento[:status] == "aprovado"}
 pendentes = documentos.select {|documento| documento[:status] == "pendente"}
 rejeitados = documentos.select {|documento| documento[:status] == "rejeitado"}
 
-aprovados_2k = aprovados.select {|aprovado| aprovado[:valor] > 2000}
-
 if aprovados.any?
-     if aprovados_2k.any?
+     if aprovados.any? {|aprovado| aprovado[:valor] > 2000}
           puts "Documentos aprovados com valor > 2000:"
-          aprovados_2k.each do |aprovado_2k|
-               puts "ID #{aprovado_2k[:id]}, Valor: R$ #{aprovado_2k[:valor]}, Fornecedor: #{aprovado_2k[:fornecedor]}"
+          aprovados.each do |aprovado|
+               if aprovado[:valor] > 2000
+                    puts "ID #{aprovado[:id]}, Valor: R$ #{aprovado[:valor]}, Fornecedor: #{aprovado[:fornecedor]}"
+               end
           end
      else
           puts "Nenhum documento aprovado com valor > 2000."
      end
-
+     puts ""
      puts "Valor total por categoria (aprovados):"
-
+     aprovados.each do |aprovado|
+          puts "#{aprovado[:categoria]}: R$ #{aprovado[:valor]}"
+     end
 else
      puts "Nenhum documento aprovado."
 end
-
-
-
+puts ""
 if pendentes.any?
      puts "Fornecedores com documentos pendentes: #{pendentes.first[:fornecedor]}"
 else
      puts "Nenhum fornecedor com documentos pendentes."
 end
-
+puts ""
+if rejeitados.any?
+     puts "Existe documento de construção rejeitado? #{rejeitados.any? {|rejeitado| rejeitado[:categoria] == "construção"}}"
+else
+     puts "Nenhum documento rejeitado."
+end
