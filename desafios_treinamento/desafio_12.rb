@@ -27,6 +27,6 @@ id_do_comercial_partner = 17
 
 comercial_partner = VcommercialPartnerRegistration::CommercialPartner.find_by(id: id_do_comercial_partner)
 
-nota = Vinvoice::TaxDocuments.find_by(supplier_identification_number: comercial_partner.identifier)
+nota = Vinvoice::TaxDocument.find_by(supplier_legal_name: comercial_partner.name)
 
 message "Nota fiscal: #{nota.id} - Número da Nota: #{nota.number}"
