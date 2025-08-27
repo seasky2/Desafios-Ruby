@@ -12,7 +12,7 @@ processable = process_instance.processable
 total_value = processable.invoice_items.sum(&:total_value)
 
 if (total_value - processable.total_value).abs < Float::EPSILON
-    message "O valor total dos itens é igual ao valor total da nota fiscal: #{total_value}"
+  message "O valor total dos itens é igual ao valor total da nota fiscal: #{total_value}"
 else
-    message "Erro: O valor total dos itens (#{total_value}) é diferente do valor total da nota fiscal (#{processable.total_value})"
+  message "Erro: O valor total dos itens (#{total_value}) é diferente do valor total da nota fiscal (#{processable.total_value})"
 end

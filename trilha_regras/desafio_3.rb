@@ -10,8 +10,8 @@
 processable = process_instance.processable
 
 if processable.invoice_items.any?
-    primeiro_item = processable.invoice_items.first
-    message "A nota fiscal possui #{processable.invoice_items.count} itens. O primeiro item é: #{primeiro_item.description}."
+  primeiro_item = processable.invoice_items.first
+  message "A nota fiscal possui #{processable.invoice_items.count} itens. O primeiro item é: #{primeiro_item.description}."
 else
-    message "A nota fiscal não possui itens."
+  message "A nota fiscal não possui itens."
 end

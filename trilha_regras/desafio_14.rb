@@ -10,10 +10,10 @@
 processable = process_instance.processable
 
 soma_impostos = [
-    processable.icms_value.to_f,
-    processable.icms_st_value.to_f,
-    processable.ipi_value.to_f,
-    processable.fcp_st_value.to_f,
+  processable.icms_value.to_f,
+  processable.icms_st_value.to_f,
+  processable.ipi_value.to_f,
+  processable.fcp_st_value.to_f,
 ].sum
 
 percentual_impostos = (soma_impostos / processable.total_value.to_f) * 100
@@ -21,9 +21,9 @@ percentual_impostos = (soma_impostos / processable.total_value.to_f) * 100
 message "Percentual de impostos: #{percentual_impostos.round(2)}%."
 
 if percentual_impostos > 10
-    return true
+  return true
 elsif percentual_impostos <= 10
-    return false
+  return false
 else
-    return false
+  return false
 end

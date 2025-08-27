@@ -11,8 +11,8 @@ itens_encontrados = processable.invoice_items.select { |item| item.total_value >
 descricao = itens_encontrados.map(&:description)
 
 if itens_encontrados.any?
-    message "Foram encontrados #{itens_encontrados.count} itens com valor superior a 1000. Os itens são:\n" \
-            "#{descricao.join(';\n')}."
+  message "Foram encontrados #{itens_encontrados.count} itens com valor superior a 1000. Os itens são:\n" \
+          "#{descricao.join(';\n')}."
 else
-    message "Nenhum item encontrado com valor superior a 1000."
+  message "Nenhum item encontrado com valor superior a 1000."
 end
