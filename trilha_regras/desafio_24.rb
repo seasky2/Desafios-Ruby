@@ -8,7 +8,7 @@
 
 processable = process_instance.processable
 
-possui_boleto = processable.bank_slips&.first&.due_date&.present?
+possui_boleto = processable.bank_slips.present?
 
 if possui_boleto
   processable.net_due_date = processable.bank_slips.first.due_date
