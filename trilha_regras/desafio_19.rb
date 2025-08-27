@@ -1,7 +1,7 @@
 # DESAFIO 19 - Condicional com múltiplas condições
-# 
+
 # CONTEXTO:
-# 
+
 # Você precisa criar uma lógica que classifica uma nota fiscal baseada em múltiplas condições:
 # - Se valor > 10000: ""ALTO VALOR""
 # - Se valor > 1000 e tipo é serviço: ""SERVIÇO MÉDIO""

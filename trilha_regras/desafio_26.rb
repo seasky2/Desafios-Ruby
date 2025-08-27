@@ -1,7 +1,7 @@
 # DESAFIO 26 - (Validaton Rule) Validar Boleto contra nota fiscal
-# 
+
 # CONTEXTO:
-# 
+
 # O CO solicitou a você a criação das validações para validar todos os dados de um boleto contra a nota fiscal, sendo eles: cnpj do beneficiário, do sacado e o valor total do boleto,
 # faça seguindo o padrão de retorno: [validation_result, processable_value, data_fetcher_value],
 # sendo que os dados do processable_value são os dados do boleto e os dados do data_fetcher_value são os dados da nota fiscal.

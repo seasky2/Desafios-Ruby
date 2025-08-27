@@ -1,7 +1,7 @@
 # DESAFIO 27 - ScritRule (Converter CFOP de Entrada para CFOP de saída de acordo SAP)
-# 
+
 # CONTEXTO:
-# 
+
 # O CO solicitou a você a criação de uma regra de execução de processo que converte o CFOP de entrada para o CFOP de saída de acordo com o SAP, para isso você deve criar uma regra de execução de processo,
 # que pega o CFOP de entrada dos itens e converte para o CFOP de saída de acordo com o SAP.
 # Para saber qual o padrão que o SAP utiliza, use a internet para consultar sobre tal ponto e como essa conversão é feita.
