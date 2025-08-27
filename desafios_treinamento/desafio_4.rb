@@ -30,10 +30,10 @@ data_de_vencimento = Date.parse("2025-07-22")
 data_atual = Date.today
 
 if data_atual > data_de_vencimento
-    dias_atrasados = (data_atual - data_de_vencimento).to_i
-    valor_final = valor_da_nota * (1 + 0.05) ** dias_atrasados
-    puts "Atraso de #{dias_atrasados} dias. Valor com juros: R$ #{valor_final.round(2)}"
+  dias_atrasados = (data_atual - data_de_vencimento).to_i
+  valor_final = valor_da_nota * (1 + 0.05) ** dias_atrasados
+  puts "Atraso de #{dias_atrasados} dias. Valor com juros: R$ #{valor_final.round(2)}"
 else
-    dias_atrasados = 0
-    puts "A nota não está vencida. Valor atual: R$ #{valor_da_nota.round(2)}" 
+  dias_atrasados = 0
+  puts "A nota não está vencida. Valor atual: R$ #{valor_da_nota.round(2)}" 
 end

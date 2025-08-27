@@ -30,15 +30,15 @@ tipo_da_nota_2 = "Vinvoice::TransportationInvoice"
 tipo_da_nota_3 = "Vinvoice::ServiceInvoice"
 
 def validar_nota_fiscal(tipo_da_nota)
-    fluxo_da_nota = case tipo_da_nota
-    when "Vinvoice::MaterialInvoice"
-        fluxo_da_nota = "FLUXO DE MATERIAL"
-    when "Vinvoice::TransportationInvoice"
-        fluxo_da_nota = "FLUXO DE TRANSPORTE"
-    when "Vinvoice::ServiceInvoice"
-        fluxo_da_nota = "FLUXO DE SERVIÇO"
-    end
-    return fluxo_da_nota
+  fluxo_da_nota = case tipo_da_nota
+  when "Vinvoice::MaterialInvoice"
+    fluxo_da_nota = "FLUXO DE MATERIAL"
+  when "Vinvoice::TransportationInvoice"
+    fluxo_da_nota = "FLUXO DE TRANSPORTE"
+  when "Vinvoice::ServiceInvoice"
+    fluxo_da_nota = "FLUXO DE SERVIÇO"
+  end
+  return fluxo_da_nota
 end
 
 puts validar_nota_fiscal(tipo_da_nota_1)

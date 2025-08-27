@@ -49,25 +49,25 @@ processable.id = 11306
 processable.id = 11811
 
 processable.each do |processable|
-    if processable.type == "Vinvoice::MaterialInvoice" && processable.total_value > 10000
-        message "Nota de Material (#{processable.id})\n" \
-                "Valor total: R$ #{processable.total_value}\n\n" \
-                "Fluxo : Aprovação\n" \
-                "A regra retornou: true"
-        resultado = true
-    elsif processable.type == "Vinvoice::ServiceInvoice" && processable.iss_value > 100
-        message "Nota de Serviço (#{processable.id})\n" \
-                "Valor do ISS: R$ #{processable.iss_value}\n\n" \
-                "Fluxo: Aprovação\n" \
-                "A regra retornou: true"
-        resultado = true
-    else
-        message "Nota de Material (#{processable.id})\n" \
-                "Valor total: R$ #{processable.total_value}\n\n" \
-                "Fluxo : Validação\n" \
-                "A regra retornou: false"
-        resultado false
-    end
+  if processable.type == "Vinvoice::MaterialInvoice" && processable.total_value > 10000
+    message "Nota de Material (#{processable.id})\n" \
+            "Valor total: R$ #{processable.total_value}\n\n" \
+            "Fluxo : Aprovação\n" \
+            "A regra retornou: true"
+    resultado = true
+  elsif processable.type == "Vinvoice::ServiceInvoice" && processable.iss_value > 100
+    message "Nota de Serviço (#{processable.id})\n" \
+            "Valor do ISS: R$ #{processable.iss_value}\n\n" \
+            "Fluxo: Aprovação\n" \
+            "A regra retornou: true"
+    resultado = true
+  else
+    message "Nota de Material (#{processable.id})\n" \
+            "Valor total: R$ #{processable.total_value}\n\n" \
+            "Fluxo : Validação\n" \
+            "A regra retornou: false"
+    resultado = false
+  end
 end
 
 return resultado

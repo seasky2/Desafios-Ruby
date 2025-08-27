@@ -41,5 +41,5 @@ message "Tipo da nota: #{processable.type}\n" \
         "Valor total da nota: R$ #{processable.total_value}\n\n" \
         "Itens da nota:\n"
         itens.each do |item|
-            message "#{item.description} - R$ #{item.total_value.round}"
+          message "#{item.description} - R$ #{item.total_value.round}"
         end

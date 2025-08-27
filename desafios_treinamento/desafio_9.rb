@@ -30,9 +30,9 @@
 processable = process_instance.processable
 
 if processable.type == "Vinvoice::MaterialInvoice"
-    message "Material\n" \
-            "ICMS: #{processable.icms_value}"
+  message "Material\n" \
+          "ICMS: #{processable.icms_value}"
 elsif processable.type == "Vinvoice::ServiceInvoice"
-    message "Serviço\n" \
-            "ISS: #{processable.iss_value}"
+  message "Serviço\n" \
+          "ISS: #{processable.iss_value}"
 end

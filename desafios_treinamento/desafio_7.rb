@@ -34,11 +34,11 @@
 # ESPAÇO PARA SUA SOLUÇÃO:
 
 fornecedores = {
-    "12345678000195" => {nome: "Tech Solutions", categoria: "tecnologia", ativo: true, faturamento: 150000},
-    "23456789000196" => {nome: "Logistica Express", categoria: "transporte", ativo: false, faturamento: 80000},
-    "34567890000197" => {nome: "Construção Forte", categoria: "construção", ativo: true, faturamento: 200000},
-    "45678901000198" => {nome: "Serviços Gerais", categoria: "serviços", ativo: true, faturamento: 120000},
-    "56789012000199" => {nome: "Materiais Prime", categoria: "materiais", ativo: false, faturamento: 90000}
+  "12345678000195" => {nome: "Tech Solutions", categoria: "tecnologia", ativo: true, faturamento: 150000},
+  "23456789000196" => {nome: "Logistica Express", categoria: "transporte", ativo: false, faturamento: 80000},
+  "34567890000197" => {nome: "Construção Forte", categoria: "construção", ativo: true, faturamento: 200000},
+  "45678901000198" => {nome: "Serviços Gerais", categoria: "serviços", ativo: true, faturamento: 120000},
+  "56789012000199" => {nome: "Materiais Prime", categoria: "materiais", ativo: false, faturamento: 90000}
 }
 
 total_fornecedores = fornecedores.size
