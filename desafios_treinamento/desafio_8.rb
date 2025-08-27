@@ -8,12 +8,12 @@
 # PARÂMETROS:
 
 # documentos = [
-#    {id: 1, tipo: "NFe", valor: 1500, status: "aprovado", fornecedor: "Tech Solutions", categoria: "tecnologia"},
-#    {id: 2, tipo: "CTe", valor: 800, status: "pendente", fornecedor: "Logística Express", categoria: "transporte"},
-#    {id: 3, tipo: "NFe", valor: 2200, status: "aprovado", fornecedor: "Construção Forte", categoria: "construção"},
-#    {id: 4, tipo: "CTe", valor: 1200, status: "rejeitado", fornecedor: "Serviços Gerais", categoria: "serviços"},
-#    {id: 5, tipo: "NFe", valor: 3500, status: "aprovado", fornecedor: "Materiais Prime", categoria: "materiais"},
-#    {id: 6, tipo: "CTe", valor: 900, status: "pendente", fornecedor: "Logística Express", categoria: "transporte"}
+#   {id: 1, tipo: "NFe", valor: 1500, status: "aprovado", fornecedor: "Tech Solutions", categoria: "tecnologia"},
+#   {id: 2, tipo: "CTe", valor: 800, status: "pendente", fornecedor: "Logística Express", categoria: "transporte"},
+#   {id: 3, tipo: "NFe", valor: 2200, status: "aprovado", fornecedor: "Construção Forte", categoria: "construção"},
+#   {id: 4, tipo: "CTe", valor: 1200, status: "rejeitado", fornecedor: "Serviços Gerais", categoria: "serviços"},
+#   {id: 5, tipo: "NFe", valor: 3500, status: "aprovado", fornecedor: "Materiais Prime", categoria: "materiais"},
+#   {id: 6, tipo: "CTe", valor: 900, status: "pendente", fornecedor: "Logística Express", categoria: "transporte"}
 # ]
 
 # RESULTADO ESPERADO:
