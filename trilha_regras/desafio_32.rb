@@ -9,6 +9,6 @@
 # onde o primeiro elemento é o que o usuário verá para escolha é a descrição da LC116 e o segundo é o código da LC116 que será salvo no banco de dados.
 # É recomendado entrar em contato com algum funcional para uma explicação mais detalhada sobre esse desafio para maior aprendizado.
 
-Vportal::CustomTable.fetch('custom_table_5597260cf639f177bd30').map do |lc116|
-  [lc116.descricao_lc116, lc116.codigo_lc116]
-end
+ct = Vportal::CustomTable.fetch('custom_table_5597260cf639f177bd30')
+
+return ct.select { |ct| [ct.descricao_lc116, ct.codigo_lc116] }
