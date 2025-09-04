@@ -55,10 +55,11 @@ end
 processable = process_instance.processable
 errors = check_all_taxes(processable)
 
+new_status = Vprocessmanager::Status.find_by(identifier: 'status_45a15d7cd11d0ffcbd32')
+task_definition = Vprocessmanager::TaskDefinition.find_by(identifier: 'task_definition_9b0b029e22ac4aaa203c')
+
 if errors.empty?
-  message "Nota fiscal: #{processable.id} - Número da Nota: #{processable.number}"
   return true
 else
-  message "Inconsistências encontradas: #{errors.join('; ')}"
-  return false
+  process_instance.change_status_and_instantiate_new_task(new_status, task_definition, nil)
 end
